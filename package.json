@@ -4,6 +4,7 @@
   "description": "teste",
   "main": "index.js",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "gulp-rename": "^2.0.0"
   },
   "devDependencies": {

@@ -1,3 +1,4 @@
+@import url(../../node_modules/@fortawesome/fontawesome-free/css/all.css);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -110,7 +111,8 @@ header {
           display: flex;
           align-items: center; }
           header > .header-content > .container > .user-options > .options > .search {
-            position: relative; }
+            position: relative;
+            cursor: pointer; }
             header > .header-content > .container > .user-options > .options > .search > i {
               font-size: 26px;
               color: #3b3878; }
