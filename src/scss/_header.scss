@@ -30,9 +30,11 @@ header {
                 @media (max-width: 900px) {
                     max-width: 130px;
                 }
-    
-                > img {
-                    width: 100%;
+                
+                > a {
+                    > img {
+                        width: 100%;
+                    }
                 }
             }
         
@@ -110,36 +112,58 @@ header {
                     > .search {
                         position: relative;
                         cursor: pointer;
+                        transition: .2s all ease-in-out;
 
-                        > i {
-                            font-size: 26px;
-                            color: #3b3878;
+                        > a {
+                            > i {
+                                font-size: 26px;
+                                color: #3b3878;
+                            }
                         }
+
+                        &:hover {
+                            opacity: 0.7;
+                        }
+
                     }
 
                     > .profile {
                         position: relative;
                         margin: 0 15px;
+                        transition: .2s all ease-in-out;
 
-                        > i {
-                            font-size: 26px;
-                            color: #3b3878;
+                        > a {
+                            > i {
+                                font-size: 26px;
+                                color: #3b3878;
+                            }
+                        }
+
+                        &:hover {
+                            opacity: 0.7;
                         }
                     }
 
                     > .buy {
                         position: relative;
+                        transition: .2s all ease-in-out;
 
-                        > i {
-                            font-size: 26px;
-                            color: #3b3878;
+                        > a {
+                            > i {
+                                font-size: 26px;
+                                color: #3b3878;
+                            }
+                        }
+
+                        &:hover {
+                            opacity: 0.7;
                         }
                     }
                 }
 
                 > .buttons-menu {
                     margin-left: 15px;
-                    display: none;
+                    display: none; 
 
                     
                     @media (max-width: 900px) {

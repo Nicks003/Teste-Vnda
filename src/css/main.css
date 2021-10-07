@@ -63,7 +63,7 @@ header {
         @media (max-width: 900px) {
           header > .header-content > .container > .logo {
             max-width: 130px; } }
-        header > .header-content > .container > .logo > img {
+        header > .header-content > .container > .logo > a > img {
           width: 100%; }
       header > .header-content > .container > nav {
         position: relative;
@@ -112,21 +112,30 @@ header {
           align-items: center; }
           header > .header-content > .container > .user-options > .options > .search {
             position: relative;
-            cursor: pointer; }
-            header > .header-content > .container > .user-options > .options > .search > i {
+            cursor: pointer;
+            transition: .2s all ease-in-out; }
+            header > .header-content > .container > .user-options > .options > .search > a > i {
               font-size: 26px;
               color: #3b3878; }
+            header > .header-content > .container > .user-options > .options > .search:hover {
+              opacity: 0.7; }
           header > .header-content > .container > .user-options > .options > .profile {
             position: relative;
-            margin: 0 15px; }
-            header > .header-content > .container > .user-options > .options > .profile > i {
+            margin: 0 15px;
+            transition: .2s all ease-in-out; }
+            header > .header-content > .container > .user-options > .options > .profile > a > i {
               font-size: 26px;
               color: #3b3878; }
+            header > .header-content > .container > .user-options > .options > .profile:hover {
+              opacity: 0.7; }
           header > .header-content > .container > .user-options > .options > .buy {
-            position: relative; }
-            header > .header-content > .container > .user-options > .options > .buy > i {
+            position: relative;
+            transition: .2s all ease-in-out; }
+            header > .header-content > .container > .user-options > .options > .buy > a > i {
               font-size: 26px;
               color: #3b3878; }
+            header > .header-content > .container > .user-options > .options > .buy:hover {
+              opacity: 0.7; }
         header > .header-content > .container > .user-options > .buttons-menu {
           margin-left: 15px;
           display: none; }
@@ -573,7 +582,7 @@ main {
       @media (max-width: 900px) {
         .social-section > .container > .showcase > .text-box {
           margin-top: 20px; } }
-      .social-section > .container > .showcase > .text-box > p {
+      .social-section > .container > .showcase > .text-box > a {
         font-size: 18px;
         color: white;
         font-weight: 600; }
@@ -600,7 +609,7 @@ footer {
       width: 100%;
       height: 50%;
       background-color: #FFF1FA; }
-    footer > .heading > img {
+    footer > .heading > a > img {
       position: relative;
       width: 100%; }
   footer > .container {
@@ -640,7 +649,8 @@ footer {
             margin-left: 60px; }
           footer > .container > .footer-menu > .submenu > ul > li {
             position: relative;
-            margin-top: 15px; }
+            margin-top: 15px;
+            transition: .2s all ease-in-out; }
             footer > .container > .footer-menu > .submenu > ul > li:first-child {
               margin-top: 0; }
             footer > .container > .footer-menu > .submenu > ul > li > a {
@@ -649,6 +659,8 @@ footer {
               @media (max-width: 900px) {
                 footer > .container > .footer-menu > .submenu > ul > li > a {
                   font-size: 14px; } }
+            footer > .container > .footer-menu > .submenu > ul > li:hover {
+              opacity: 0.7; }
     footer > .container > .contact {
       position: relative; }
       @media (max-width: 900px) {
@@ -692,7 +704,8 @@ footer {
             border: 0;
             text-transform: uppercase;
             color: #3b3878;
-            margin: -20px 0 0 -70px; }
+            margin: -20px 0 0 -70px;
+            cursor: pointer; }
     footer > .container > .social {
       position: relative; }
       @media (max-width: 900px) {
@@ -709,7 +722,8 @@ footer {
       footer > .container > .social > .insta {
         position: relative;
         display: flex;
-        align-items: center; }
+        align-items: center;
+        transition: .2s all ease-in-out; }
         @media (max-width: 900px) {
           footer > .container > .social > .insta {
             justify-content: center; } }
@@ -719,11 +733,14 @@ footer {
           @media (max-width: 900px) {
             footer > .container > .social > .insta > a {
               font-size: 14px; } }
+        footer > .container > .social > .insta:hover {
+          opacity: 0.7; }
       footer > .container > .social > .facebook {
         position: relative;
         display: flex;
         align-items: center;
-        margin-top: 10px; }
+        margin-top: 10px;
+        transition: .2s all ease-in-out; }
         @media (max-width: 900px) {
           footer > .container > .social > .facebook {
             justify-content: center; } }
@@ -733,6 +750,8 @@ footer {
           @media (max-width: 900px) {
             footer > .container > .social > .facebook > a {
               font-size: 14px; } }
+        footer > .container > .social > .facebook:hover {
+          opacity: 0.7; }
   footer .company-info {
     position: relative;
     margin-top: 30px;
