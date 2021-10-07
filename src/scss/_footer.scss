@@ -1,0 +1,256 @@
+footer {
+    position: relative;
+    background-color: #4CC9F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0;
+    border-top: 2px solid #3b3878;
+    
+
+    > .heading {
+        position: relative;
+        display: flex;
+        max-width: 150px;
+        margin: -56px 0 60px 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background-color: #FFF1FA;
+            // background-color: #4CC9F0;
+        }
+
+
+        > img {
+            position: relative;
+            width: 100%;
+
+         
+
+        }
+
+    }
+
+    > .container {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        
+        
+        @media (max-width: 1024px) {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        > .footer-menu {
+            position: relative;
+
+            @media (max-width: 900px) {
+                margin-top: 40px;
+            }
+            
+            > h2 {
+                font-size: 24px;
+                color: #3b3878;
+                margin-bottom: 30px;
+
+                @media (max-width: 900px) {
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+
+            > .submenu {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                > ul {
+                    position: relative;
+                    
+                    &:last-child {
+                        margin-left: 60px;
+                    }
+
+                    > li {
+                        position: relative;
+                        margin-top: 15px;
+
+                        &:first-child {
+                            margin-top: 0;
+                        }
+
+                        > a {
+                            font-size: 16px;
+                            color: #3b3878;
+
+                            @media (max-width: 900px) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        > .contact {
+            position: relative;
+
+            @media (max-width: 900px) {
+                margin-top: 40px;
+            }
+
+            > h2 {
+                font-size: 24px;
+                margin-bottom: 30px;
+                color: #3b3878;
+
+                @media (max-width: 900px) {
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+
+            > form {
+                position: relative;
+
+                > label {
+                    font-size: 16px;
+                    color: #3b3878;
+                    display: block;
+                    font-family: 'PT Sans', sans-serif;
+
+                    
+                    @media (max-width: 900px) {
+                        font-size: 14px;
+                    }
+
+                }
+
+                > input {
+                    position: relative;
+                    width: 350px;
+                    height: 35px;
+                    background: transparent;
+                    border-width: 0 0 1px;
+                    border-color: #3b3878;
+                    outline: 0;
+                    padding-bottom: 20px;
+
+                    &::placeholder {
+                        color: #3b3878;
+                    }
+
+                    
+                    @media (max-width: 900px) {
+                        width: 200px;
+                    }
+                    
+                    &:last-child {
+                        position: relative;
+                        width: auto;
+                        border: 0;
+                        text-transform: uppercase;
+                        color: #3b3878;
+                        margin:  -20px 0 0 -70px;
+                    }
+                }
+            }
+        }
+
+        > .social {
+            position: relative;
+
+            
+            @media (max-width: 900px) {
+                margin-top: 40px;
+            }
+
+            > h2 {
+                font-size: 24px;
+                margin-bottom: 30px;
+                color: #3b3878;
+
+                @media (max-width: 900px) {
+                    margin-bottom: 20px;
+                    font-size: 18px;
+                }
+            }
+
+            > .insta {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                @media (max-width: 900px) {
+                    justify-content: center;
+                }
+    
+                
+
+                > a {
+                    font-size: 16px;
+                    color: #3b3878;
+
+                    
+                    @media (max-width: 900px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            > .facebook {
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+
+
+                @media (max-width: 900px) {
+                    justify-content: center;
+                }
+
+                > a {
+                    font-size: 16px;
+                    color: #3b3878;
+
+                    
+                    @media (max-width: 900px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }        
+    }
+
+    .company-info {
+        position: relative;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+
+        > span {
+            font-size: 16px;
+            color: #3b3878;
+            text-align: center;
+
+            
+            @media (max-width: 900px) {
+                font-size: 12px;
+            }
+        }
+    }
+}

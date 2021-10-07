@@ -1,0 +1,40 @@
+.circle-images {
+    position: relative;
+    padding: 60px 0;
+
+    > .container {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 900px) {
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        > .circle {
+            position: relative;
+            max-width: 200px;
+            overflow: hidden;
+            margin-left: 20px;
+
+            &:first-child {
+                margin-left: 0px;
+            }
+
+            @media (max-width: 900px) {
+                margin: 10px;
+                max-width: 100px;
+
+            }
+
+            
+
+            > img {
+                position: relative;
+                width: 100%;
+                border-radius: 100%;
+            }
+        }
+    }
+}

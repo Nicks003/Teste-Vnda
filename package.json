@@ -1,0 +1,26 @@
+{
+  "name": "front-end-challenge",
+  "version": "1.0.0",
+  "description": "teste",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-rename": "^2.0.0"
+  },
+  "devDependencies": {
+    "clean-css": "^5.2.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^5.0.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.42.1"
+  },
+  "scripts": {
+    "start": "start"
+  },
+  "author": "Nícolas",
+  "license": "ISC"
+}

@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF1FA;
+}
+
+p, span {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h2, h5 {
+    font-family: 'PT Sans', sans-serif;
+}
+ 
+.container {
+    position: relative;
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 70px;
+    margin: 0 auto;
+
+    @media (max-width: 900px) {
+        padding: 0 5px;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+}

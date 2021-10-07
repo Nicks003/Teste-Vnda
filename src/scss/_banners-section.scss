@@ -1,0 +1,223 @@
+.banners-section {
+    position: relative;
+    background-color: #4361EE;
+    padding: 45px 0;
+
+    > .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+        }
+
+        > .arrow {
+            position: absolute;
+            bottom: 0;
+            transform: translateY(100%);
+            left: 70px;
+            max-width: 50px;
+           
+    
+            @media (max-width: 1024px) {
+                display: none;
+            }
+    
+            > img {
+                width: 100%;
+            }
+        }
+      
+
+        > .info {
+
+            @media (max-width: 900px) {
+                margin-top: 20px;
+            }
+
+            > span {
+                font-size: 16px;
+                color: white;
+            }
+
+            > h2 {
+                font-size: 38px;
+                margin: 40px 0;
+                font-weight: bold;
+                color: white;
+
+            }
+
+            > p {
+                max-width: 250px;
+                color: white;
+                font-size: 18px;
+
+                @media (max-width: 900px) {
+                    max-width: 300px;
+                }
+
+            }
+        }
+
+        > .banners-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-left: 25px;
+
+            @media (max-width: 900px) {
+                flex-direction: column;
+                margin-left: 0;
+            
+            }
+
+            > .banner {
+                display: block;
+                position: relative;
+                max-width: 350px;
+                margin-bottom: -245px;
+                overflow: hidden;
+
+
+                @media (max-width: 900px) {
+                    margin: 20px 0;
+                    max-width: 300px;
+                }
+
+                > .banner-img {
+                    position: relative;
+                    overflow: hidden;
+                    height: 525px;
+
+                    > img {
+                        position: relative;
+                        width: auto;
+                        height: 100%;
+                        transition: .3s all ease-in-out;
+                    }
+                }
+
+                &:hover {
+                    > .banner-img {
+                        > img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+
+
+                > .infobanner {
+                    position: relative;
+                    padding: 15px 10px;
+                    background-color: #4CC9F0;
+
+                    > h5 {
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                        color: #000;
+                    }
+
+                    > p {
+                        text-align: center;
+                        font-size: 16px;
+                        color: #000;
+                    }
+                }
+            }
+
+            > .double {
+                margin: 50px 0 -400px 20px;
+
+                @media (max-width: 900px) {
+                    margin: 0 0 20px 0;
+                }
+
+                > .banner {
+                    display: block;
+                    position: relative;
+                    max-width: 350px;
+                    background-color: #4CC9F0;
+                    margin-bottom: 20px;
+                    
+                    @media (max-width: 900px) {
+                        max-width: 300px;
+                    }
+
+                    > .banner-img {
+                        position: relative;
+                        overflow: hidden;
+                        height: 233px;
+    
+                        > img {
+                            position: relative;
+                            width: auto;
+                            height: 100%;
+                            transition: .3s all ease-in-out;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+
+                        > .banner-img {
+                            position: relative;
+                            overflow: hidden;
+                            height: 467px;
+                        }
+                    }
+
+
+                    &:hover {
+                        > .banner-img {
+                            > img {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+
+                    > .infobanner {
+                        position: relative;
+                        padding: 15px 10px;
+
+                        > h5 {
+                            text-align: center;
+                            font-weight: bold;
+                            font-size: 16px;
+                            margin-bottom: 10px;
+                            color: #000;
+
+                        }
+
+                        > p {
+                            text-align: center;
+                            font-size: 16px;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bounce {
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+}
